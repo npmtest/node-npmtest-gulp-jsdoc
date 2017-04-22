@@ -35,53 +35,9 @@
 ```json
 
 {
-    "author": {
-        "name": "Mangled Deutz",
-        "url": "https://github.com/dmp42"
-    },
-    "bugs": {
-        "url": "https://github.com/jsBoot/gulp-jsdoc/issues"
-    },
-    "contributors": [],
-    "dependencies": {
-        "chalk": "~0.4.0",
-        "gulp-util": "~2.2.14",
-        "ink-docstrap": "~0.4.5",
-        "jsdoc": "3.3.0-alpha5",
-        "marked": "~0.3.1",
-        "taffydb": "~2.7.2",
-        "text-table": "~0.2.0",
-        "through2": "^1.0.0",
-        "vinyl-fs": "~0.3.0",
-        "wrench": "~1.5.6"
-    },
-    "deprecated": "This project is deprecated. Use gulp-jsdoc3 instead.",
+    "name": "gulp-jsdoc",
+    "version": "0.1.5",
     "description": "A jsdoc plugin for Gulp",
-    "devDependencies": {
-        "coveralls": "^2.7.1",
-        "event-stream": "~3.1.0",
-        "gulp": "^3.5.6",
-        "gulp-eslint": "~0.1.2",
-        "gulp-jshint": "^1.3.4",
-        "gulp-template": "~0.1.1",
-        "istanbul": "^0.2.4",
-        "jshint": "^2.4.4",
-        "jshint-stylish": "^0.1.5",
-        "mocha": "^1.17.1",
-        "mocha-lcov-reporter": "~0.0.1",
-        "should": "^3.1.4"
-    },
-    "directories": {},
-    "dist": {
-        "shasum": "c79e06f9bdeb868a3e096fa56da037110d998455",
-        "tarball": "https://registry.npmjs.org/gulp-jsdoc/-/gulp-jsdoc-0.1.5.tgz"
-    },
-    "engines": {
-        "node": ">=0.10.0",
-        "npm": ">=1.0.0"
-    },
-    "gitHead": "8a6d325c354237e1a69019fb7b19f3790cdbde04",
-    "homepage": "https://github.com/jsBoot/gulp-jsdoc",
     "keywords": [
         "gulpplugin",
         "jsdoc",
@@ -89,28 +45,57 @@
         "javascript",
         "gulp"
     ],
+    "homepage": "https://github.com/jsBoot/gulp-jsdoc",
+    "bugs": {
+        "url": "https://github.com/jsBoot/gulp-jsdoc/issues"
+    },
     "license": "MIT",
+    "author": {
+        "name": "Mangled Deutz",
+        "url": "https://github.com/dmp42"
+    },
+    "contributors": [],
     "main": "./index.js",
-    "maintainers": [
-        {
-            "name": "dmp"
-        },
-        {
-            "name": "indexzero"
-        }
-    ],
-    "name": "gulp-jsdoc",
-    "optionalDependencies": {},
-    "private": false,
     "repository": {
         "type": "git",
         "url": "git://github.com/jsBoot/gulp-jsdoc.git"
     },
     "scripts": {
-        "coveralls": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
-        "test": "istanbul test _mocha --report html -- test/*.js --reporter spec"
+        "test": "istanbul test _mocha --report html -- test/*.js --reporter spec",
+        "coveralls": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
     },
-    "version": "0.1.5"
+    "dependencies": {
+        "through2": "^1.0.0",
+        "gulp-util": "~2.2.14",
+        "chalk": "~0.4.0",
+        "text-table": "~0.2.0",
+        "vinyl-fs": "~0.3.0",
+        "jsdoc": "3.3.0-alpha5",
+        "taffydb": "~2.7.2",
+        "ink-docstrap": "~0.4.5",
+        "wrench": "~1.5.6",
+        "marked": "~0.3.1"
+    },
+    "devDependencies": {
+        "mocha": "^1.17.1",
+        "coveralls": "^2.7.1",
+        "mocha-lcov-reporter": "~0.0.1",
+        "istanbul": "^0.2.4",
+        "event-stream": "~3.1.0",
+        "should": "^3.1.4",
+        "jshint": "^2.4.4",
+        "gulp": "^3.5.6",
+        "gulp-template": "~0.1.1",
+        "gulp-jshint": "^1.3.4",
+        "gulp-eslint": "~0.1.2",
+        "jshint-stylish": "^0.1.5"
+    },
+    "engines": {
+        "node": ">=0.10.0",
+        "npm": ">=1.0.0"
+    },
+    "private": false,
+    "bin": {}
 }
 ```
 
